@@ -4,6 +4,10 @@ const axios = require('axios');
 var request = require('request');
 const APIKEY = "6a079999-6cdd-4b2c-89b6-121809353354"; //process.env.REACT_APP_HUBSPOT_APIKEY;
 
+router.get('/', (req, res) => {
+  res.send('server works')
+})
+
 /* GET home page. */
 router.post('/createContact', async (req, res, next) => {
   const {
